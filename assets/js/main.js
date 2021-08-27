@@ -57,4 +57,8 @@ function plusSlides(n) {
     SlideShow(slidePosition += n);
 }
 
+//  images controls
+function currentSlide(n) {
+    SlideShow(slidePosition = n);
+}
 
