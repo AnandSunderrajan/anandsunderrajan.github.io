@@ -61,4 +61,12 @@ function plusSlides(n) {
 function currentSlide(n) {
     SlideShow(slidePosition = n);
 }
+function SlideShow(n) {
+    var i;
+    var slides = document.getElementsByClassName("container");
+    var circles = document.getElementsByClassName("experience__tab");
+    if (n > slides.length) {slidePosition = 1}
+    if (n < 1) {slidePosition = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
 
