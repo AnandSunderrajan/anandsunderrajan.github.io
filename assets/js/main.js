@@ -48,3 +48,13 @@ function switchTheme(e) {
 toggleSwitch.addEventListener('change', switchTheme, false);
 
 
+/*===== EXPERIENCE TIMELINE CAROUSEL ===== */
+var slidePosition = 1;
+SlideShow(slidePosition);
+
+// forward/Back controls
+function plusSlides(n) {
+    SlideShow(slidePosition += n);
+}
+
+
