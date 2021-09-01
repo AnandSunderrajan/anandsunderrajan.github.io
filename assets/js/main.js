@@ -98,3 +98,8 @@ sr.reveal('.about__subtitle',{delay: 400});
 sr.reveal('.about__text',{delay: 400});
 
 
+/*=============SCROLL REVEAL EXPERIENCE ===================*/
+sr.reveal('.experience__subtitle', {});
+sr.reveal('.experience__carousel', {});
+sr.reveal('.timeline__component', {});
+
