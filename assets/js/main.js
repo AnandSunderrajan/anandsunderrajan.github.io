@@ -103,3 +103,5 @@ sr.reveal('.experience__subtitle', {});
 sr.reveal('.experience__carousel', {});
 sr.reveal('.timeline__component', {});
 
+/*============= SCROLL REVEAL PROJECTS EXP ======================*/
+sr.reveal('.work__img',{interval: 200});
