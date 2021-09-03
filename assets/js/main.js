@@ -112,3 +112,6 @@ sr.reveal('.skills__text',{});
 sr.reveal('.skills__data',{interval: 200});
 sr.reveal('.skills__img',{delay: 400});
 
+/*================SCROLL REVEAL CONTACT FORM=========================*/
+sr.reveal('.contact__input',{interval: 200});
+
