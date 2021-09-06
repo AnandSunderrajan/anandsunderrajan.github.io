@@ -1,0 +1,18 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/*===== VARIABLES CSS =====*/
+:root{
+  --header-height: 3rem;
+  --font-semi: 600;
+}
+
+/*===== BASE COLOURS =====*/
+:root{
+  --first-color: #4070F4;
+  --second-color: #0E2431;
+  --timeline_color: #121212;
+  --footer__color: #0e2431;
+  --bg-color: white;
+  --header-color: #fff;
+  --box: rgba(14,36,49,.15)
+}
