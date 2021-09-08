@@ -266,3 +266,22 @@ input:checked + .slider:before {
 .show{
   right: 0;
 }
+/*===== HOME =====*/
+.home{
+  height: calc(100vh - 3rem);
+  row-gap: 1rem;
+}
+.home__data{
+  align-self: center;
+}
+.home__title{
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-5);
+}
+.home__title-color{
+  color: var(--first-color);
+}
+.home__social{
+  display: flex;
+  flex-direction: column;
+}
