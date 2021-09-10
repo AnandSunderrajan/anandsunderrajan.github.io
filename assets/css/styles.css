@@ -65,3 +65,14 @@ body{
   background: var(--bg-color);
 }
 
+[data-theme="dark"] {
+  --first-color: salmon;
+  --second-color: #f5f5f5;
+  --font-color: white;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+  --timeline_color: white;
+  --footer__color: #161625;
+  --header-color: #161625 ;
+  --box: rgb(98.04%, 50.2%, 44.71%);
+}
