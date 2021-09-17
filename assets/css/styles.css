@@ -294,3 +294,15 @@ input:checked + .slider:before {
 .home__social-icon:hover{
   color: var(--first-color);
 }
+.home__img{
+  position: absolute;
+  float: right;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
