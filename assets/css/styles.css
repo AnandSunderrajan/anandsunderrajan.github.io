@@ -355,3 +355,20 @@ input:checked + .slider:before {
   top: initial;
   bottom: 15px;
 }
+
+/*====TIMELINE=====*/
+.timeline{
+  margin: 0 auto;
+  position: center;
+  max-width: 90%;
+  text-align: justify;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 3px 0.35fr 1fr;
+  font-family: 'Poppins';
+  color: #0E2431;
+}
+.timeline__component{
+  margin: 0 18px 20px 20px;
+}
+
