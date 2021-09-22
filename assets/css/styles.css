@@ -337,3 +337,21 @@ input:checked + .slider:before {
 .changing {
   color: var(--timeline_color);
 }
+
+/* ===== EXPERIENCE ===== */
+.experience__container{
+  row-gap: 2rem;
+  text-align: center;
+}
+.experience__subtitle{
+  margin-bottom: var(--mb-2);
+  margin: 0 auto;
+}
+.experience__text{
+  margin-bottom: var(--mb-4);
+}
+.salmoncol{
+  color: salmon;
+  top: initial;
+  bottom: 15px;
+}
