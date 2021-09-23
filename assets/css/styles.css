@@ -378,5 +378,21 @@ input:checked + .slider:before {
   text-align: left;
   color: var(--first-color);
 }
+.timeline__bar {
+  position: relative;
+  top: 5px;
+  background: #4070F4;
+}
+.timeline__marker{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: salmon;
+}
+
 
 
