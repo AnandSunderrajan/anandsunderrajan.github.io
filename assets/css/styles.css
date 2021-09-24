@@ -412,6 +412,25 @@ input:checked + .slider:before {
   border-top-right-radius: 80%;
   /*background: salmon;*/
 }
+.timeline__marker__end__inner{
+  margin-top: 25%;
+  margin-left: 21%;
+  bottom: 0;
+  position: absolute;
+  width: 60%;
+  height: 75%;
+  background-color: var(--bg-color);
+  border-radius: 40%;
+  border-top-left-radius: 70%;
+  border-top-right-radius: 70%;
+}
+.timeline__title{
+  margin: 0;
+  font-size: 1.25em;
+  color: var(--timeline_color);
+  font-weight: bold;
+}
+
 
 
 
