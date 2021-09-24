@@ -393,6 +393,26 @@ input:checked + .slider:before {
   height: 15px;
   background: salmon;
 }
+.timeline__marker__inner{
+  margin-top: 25%;
+  margin-left: 25%;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: var(--bg-color);
+  border-radius: 50%;
+}
+.timeline__marker__end{
+  top: initial;
+  left:-1px;
+  bottom: 7px;
+  border-radius: initial ;
+  height: 0px;
+  border-top-left-radius: 80%;
+  border-top-right-radius: 80%;
+  /*background: salmon;*/
+}
+
 
 
 
