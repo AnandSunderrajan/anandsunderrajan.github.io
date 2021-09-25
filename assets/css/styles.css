@@ -430,6 +430,30 @@ input:checked + .slider:before {
   color: var(--timeline_color);
   font-weight: bold;
 }
+.timeline__subtitle{
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+  font-style: italic;
+  color: var(--second-color);
+}
+.timeline__text{
+  line-height: 1.25;
+  color: var(--font-color);
+}
+/*===== EDUCATION TIMELINE ====== */
+.edu__timeline{
+  margin: 0 auto;
+  position: center;
+  max-width: 90%;
+  text-align: justify;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 0.35fr 3px;
+  font-family: 'Poppins';
+  color: #0E2431;
+}
+
 
 
 
