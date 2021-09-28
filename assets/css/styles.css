@@ -476,6 +476,21 @@ input:checked + .slider:before {
   height: 15px;
   background: salmon;
 }
+/* === CAROUSEL === */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.experience__carousel{
+  max-width: 75%;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.container {
+  display: none;
+}
+
 
 
 
