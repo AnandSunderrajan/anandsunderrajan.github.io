@@ -453,6 +453,30 @@ input:checked + .slider:before {
   font-family: 'Poppins';
   color: #0E2431;
 }
+.edu__timeline__component{
+  margin: 20px 20px 18px 0;
+}
+
+.edu__timeline__date {
+  text-align: right;
+  color: var(--first-color);
+}
+.edu__timeline__bar {
+  position: relative;
+  top: 25px;
+  background: #4070F4;
+}
+.edu__timeline__marker{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: salmon;
+}
+
 
 
 
