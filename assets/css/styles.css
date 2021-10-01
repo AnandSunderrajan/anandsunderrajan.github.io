@@ -514,6 +514,29 @@ input:checked + .slider:before {
   border-radius: 4px 0 0 4px;
 }
 
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  color: salmon;
+}
+
+.experience__tab {
+  cursor: pointer;
+  padding: 1.5em;
+  margin: 0 3px;
+  width: 15em;
+  font-family: 'Poppins' ;
+  /*background-color: white;*/
+  display: inline-block;
+  border-radius: 10px;
+  transition: background-color 0.5s ease;
+}
+
+/* The circles or bullets and indicators */
+.enable, .experience__tab:hover {
+  background-color: salmon;
+}
+
+
 
 
 
