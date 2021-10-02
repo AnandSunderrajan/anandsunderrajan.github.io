@@ -593,6 +593,57 @@ input:checked + .slider:before {
   border-radius: .5rem;
   z-index: var(--z-back);
 }
+.skills__html{
+  width: 95%;
+}
+.skills__css{
+  width: 85%;
+}
+.skills__js{
+  width: 65%;
+}
+.skills__ux{
+  width: 85%;
+}
+.skills__img{
+  border-radius: .5rem;
+}
+
+/* ===== WORK =====*/
+.work__container{
+  row-gap: 2rem;
+}
+.work__link__wrapper {
+  margin-left: 0.4rem;
+  font-size: 1.3rem;
+}
+.work__link{
+  word-spacing: 0.1rem;
+  position: relative;
+}
+.work__link:hover {
+  color: salmon;
+}
+.work__title{
+  text-align: left;
+  font-family: 'Poppins' ;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-style: normal;
+}
+.work__text{
+  text-align: left;
+  padding-bottom: 1.8rem;
+}
+.work__tech{
+  /*position: absolute;*/
+  font-weight: lighter;
+  bottom: -5rem;
+  font-size: 0.8rem;
+  word-spacing: 1rem;
+}
+
+
 
 
 
