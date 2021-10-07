@@ -200,3 +200,12 @@ input:checked + .slider:before {
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
+/*===== NAV BAR =====*/
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: var(--font-semi);
+  background-color: var(--bg-color);
+}
