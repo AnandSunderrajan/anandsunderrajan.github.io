@@ -557,6 +557,49 @@ input:checked + .slider:before {
   transition: background-color 0.5s ease;
 }
 
+/*skills carousel stuff*/
+.skills__timeline{
+  margin: 0 auto;
+  /*position: center;*/
+  max-width: 85%;
+  text-align: center;
+  /*padding: 25px;*/
+  display: block;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: 'Poppins';
+  color: #0E2431;
+}
+.skills__carousel{
+  max-width: 75%;
+  position: relative;
+  margin: auto;
+  padding-top: 1em;
+}
+.skills__tab {
+  cursor: pointer;
+  padding: 1.8em;
+  margin: 0 3px;
+  width: 15em;
+  font-family: 'Poppins' ;
+  /*background-color: white;*/
+  display: inline-block;
+  border-radius: 10px;
+  transition: background-color 0.5s ease;
+}
+
+skills__data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: .5rem 1rem;
+  margin-bottom: var(--mb-4);
+  border-radius: .5rem;
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+}
+
 /* The circles or bullets and indicators */
 .enable, .experience__tab:hover, .skills__tab:hover {
   background-color: salmon;
