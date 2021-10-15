@@ -28,6 +28,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
 /*==== DARK MODE ====*/
+
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme) {
@@ -41,7 +42,8 @@ function switchTheme(e) {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
     }
-    else {        document.documentElement.setAttribute('data-theme', 'light');
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
     }
 }
@@ -56,14 +58,13 @@ SlideShow(slidePosition);
 function plusSlides(n) {
     SlideShow(slidePosition += n);
 }
-
 //  images controls
 function currentSlide(n) {
     SlideShow(slidePosition = n);
 }
 function SlideShow(n) {
     var i;
-    var slides = document.getElementsByClassName("container");
+    var slides = document.getElementsByClassName("exp_base_container");
     var circles = document.getElementsByClassName("experience__tab");
     if (n > slides.length) {slidePosition = 1}
     if (n < 1) {slidePosition = slides.length}
@@ -77,12 +78,40 @@ function SlideShow(n) {
     circles[slidePosition-1].className += " enable";
 }
 
+/* skills function */
+var skills_slidePosition = 1;
+skills_SlideShow(skills_slidePosition);
+
+// forward/Back controls
+function skills_plusSlides(n) {
+    skills_SlideShow(skills_slidePosition += n);
+}
+//  images controls
+function skills_currentSlide(n) {
+    skills_SlideShow(skills_slidePosition = n);
+}
+function skills_SlideShow(n) {
+    var i;
+    var skills_slides = document.getElementsByClassName("skill_base_container");
+    var skills_circles = document.getElementsByClassName("skills__tab");
+    if (n > skills_slides.length) {skills_slidePosition = 1}
+    if (n < 1) {skills_slidePosition = skills_slides.length}
+    for (i = 0; i < skills_slides.length; i++) {
+        skills_slides[i].style.display = "none";
+    }
+    for (i = 0; i < skills_circles.length; i++) {
+        skills_circles[i].className = skills_circles[i].className.replace(" enable", "");
+    }
+    skills_slides[skills_slidePosition-1].style.display = "block";
+    skills_circles[skills_slidePosition-1].className += " enable";
+}
+
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '60px',
-    duration: 2000,
+    distance: '50px',
+    duration: 1500,
     reset: true
 });
 
@@ -101,16 +130,7 @@ sr.reveal('.about__text',{delay: 400});
 /*=============SCROLL REVEAL EXPERIENCE ===================*/
 sr.reveal('.experience__subtitle', {});
 sr.reveal('.experience__carousel', {});
-sr.reveal('.timeline__component', {});
-
-/*============= SCROLL REVEAL PROJECTS EXP ======================*/
-sr.reveal('.work__img',{interval: 200});
-
-/*===============SCROLL REVEAL SKILLS ===================*/
-sr.reveal('.skills__subtitle',{});
-sr.reveal('.skills__text',{});
-sr.reveal('.skills__data',{interval: 200});
-sr.reveal('.skills__img',{delay: 400});
+// sr.reveal('.timeline__component', {});
 
 /*================SCROLL REVEAL CONTACT FORM=========================*/
 sr.reveal('.contact__input',{interval: 200});
