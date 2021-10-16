@@ -1,3 +1,5 @@
+<!--Nav toggle not working without internet? Check with internet as well-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -31,7 +33,8 @@
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
-                <<div class="theme-switch-wrapper">
+                ||
+                <div class="theme-switch-wrapper">
                 <i class="fas fa-sun"></i>
                 <label class="theme-switch" for="checkbox">
                     <input type="checkbox" id="checkbox" />
@@ -59,8 +62,9 @@
                 <div class="home__social">
                     <a href="https://linkedin.com/in/AnandSunderrajan" class="home__social-icon" target="_blank"><i class='fab fa-linkedin'></i></a>
                     <a href="https://kaggle.com/AnandSunderrajan" class="home__social-icon" target="_blank"><i class='fab fa-kaggle' ></i></a>
-                    <a href="mailto:anand299sunder@gmail.com" class="home__social-icon" target="_blank"><i class='fas fa-envelope' ></i></a>
+                    <a href="mailto:anand299sunder@gmail.com" class="home__social-icon" target="_blank"><i class='fas fa-envelope'></i></a>
                     <a href="https://github.com/AnandSunderrajan" class="home__social-icon" target="_blank"><i class='fab fa-github' ></i></a>
+                    <a href="https://anandsunderajan.github.io/Blog" class="home__social-icon" target="_blank"><i class='fas fa-rss' ></i></a>
                 </div>
                 <div class="home__img">
                     <img src="assets/img/masked_landing.png" alt="">
@@ -83,6 +87,7 @@
                             knowledge and experience while contributing to society. I graduated with a B.S. in Computer Engineering
                             from the University of Illinois at Urbana-Champaign. Currently looking for full-time Machine Learning,
                             Software Development or FPGA Design opportunities. Feel free to contact me regarding any positions you might have!
+                            Check out my blog <span href="#" class="blog__link"> here. </span>
                         </p>
                     </div>
                 </div>
@@ -97,7 +102,7 @@
                 </div>
                 <br>
                 <div class="experience__carousel">
-                    <div class="container">
+                    <div class="exp_base_container">
                         <div class="timeline">
                             <div class="timeline__bar">
                                 <div class="timeline__marker">
@@ -191,7 +196,7 @@
                         </div>
                     </div>
                     <!--                    EDUCATION EXPERIENCE -->
-                    <div class="container">
+                    <div class="exp_base_container">
                         <div class="edu__timeline">
 
                             <div class="edu__timeline__component">
@@ -252,6 +257,7 @@
                     </div>
                     <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+                </div>
             </section>
 
             <!--===== WORK =====-->
@@ -272,11 +278,15 @@
                             </span>
                         </span>
                         <div class="work__text">
-                            A fully responsive (static) personal website that showcases current projects and achievements. It's built using HTML, CSS, and Javascript and is deployed on github pages.
+                            A fully responsive personal website that showcases current projects and achievements. It's built using HTML, CSS, and Javascript and is deployed on github pages.
                             Contains fluid scroll animations, custom graphics, a fully functional dark mode with saved preferences, and a functioning contact form using Formspree.
                         </div>
                         <div class="work__tech">
-                            Javascript HTML CSS Git Formspree
+                            <span>Javascript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Git</span>
+                            <span>Formspree</span>
                         </div>
                     </div>
                     <div class="work__item">
@@ -297,27 +307,14 @@
                             0.48, providing an average annual return of approximately 13.78% through back testing with data since 2003.
                         </div>
                         <div class="work__tech">
-                            Python, Pandas, PyTorch, NLTK, scikit-learn, Polygon, PRAW, Stocktwits
-                        </div>
-                    </div>
-                    <div class="work__item">
-                        <span class="work__title">
-                            Object Detection System
-                        </span>
-                        <span class="work__link__wrapper">
-                            <span class="work__link">
-                                <i class="fab fa-github"></i>
-                            </span>
-                            <span class = "work__link">
-                                <i class="fas fa-rss"></i>
-                            </span>
-                        </span>
-                        <div class="work__text">
-                            An object detection and classification pipeline built in Python using TensorFlow. The model is trained using the Fashion-MNIST dataset,
-                            built using two separate methods - Keras and Low-Level APIs, achieving an accuracy of 92% and 89.7% respectively.
-                        </div>
-                        <div class="work__tech">
-                            Python, TensorFlow, NumPy, Pandas
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>PyTorch</span>
+                            <span>NLTK</span>
+                            <span>scikit-learn</span>
+                            <span>Polygon</span>
+                            <span>PRAW</span>
+                            <span>Stocktwits</span>
                         </div>
                     </div>
                     <div class="work__item">
@@ -338,7 +335,12 @@
                             achieves an accuracy of 98.04% in determining the booths attended, a >35% increase over tested alternatives.
                         </div>
                         <div class="work__tech">
-                            C, Java, EAGLE, KiCad, Soldering, PCB Design
+                            <span>C</span>
+                            <span>Java</span>
+                            <span>EAGLE</span>
+                            <span>KiCad</span>
+                            <span class="work__tech__spaced">PCB Design</span>
+                            <span>Soldering</span>
                         </div>
                     </div>
                     <div class="work__item">
@@ -358,7 +360,10 @@
                             project for ECE385 (Digital Systems Laboratory) with additional features added subsequently.
                         </div>
                         <div class="work__tech">
-                            System Verilog, FPGA Development, Quartus Prime, LaTeX
+                            <span class="work__tech__spaced">System Verilog</span>
+                            <span class="work__tech__spaced">FPGA Development</span>
+                            <span class="work__tech__spaced">Quartus Prime</span>
+                            <span>LaTeX</span>
                         </div>
                     </div>
                     <div class="work__item">
@@ -378,7 +383,10 @@
                             built using two separate methods - Keras and Low-Level APIs, achieving an accuracy of 92% and 89.7% respectively.
                         </div>
                         <div class="work__tech">
-                            React, Javascript, Node.js, Material UI
+                            <span>React</span>
+                            <span>Javascript</span>
+                            <span>Node.js</span>
+                            <span class="work__tech__spaced">Material UI</span>
                         </div>
                     </div>
                     <div class="work__item">
@@ -398,12 +406,15 @@
                             built using two separate methods - Keras and Low-Level APIs, achieving an accuracy of 92% and 89.7% respectively.
                         </div>
                         <div class="work__tech">
-                            Python, TensorFlow, NumPy, Pandas
+                            <span>Numpy</span>
+                            <span>Pandas</span>
+                            <span>Python</span>
+                            <span>TensorFlow</span>
                         </div>
                     </div>
                     <div class="work__item">
                            <span class="work__title">
-                               5
+                               PotatOS
                            </span>
                         <span class="work__link__wrapper">
                                <span class="work__link">
@@ -414,33 +425,39 @@
                                </span>
                             </span>
                         <div class="work__text">
-                            zy
+                            A linux OS built from ground up including both Assembly and C code. Fully supports keyboard and mice input, has a blinking cursor,
+                            multiple terminals through the use of paging and saved memory.
                         </div>
                         <div class="work__tech">
-                            zz
+                            <span>C</span>
+                            <span>Git</span>
+                            <span>Linux</span>
+                            <span>UNIX</span>
+                            <span>x86</span>
                         </div>
                     </div>
-                    <div class="work__item">
-                        <span class="work__title">
-                            6
-                        </span>
-                        <span class="work__link__wrapper">
-                            <span class="work__link">
-                                <i class="fab fa-github"></i>
-                            </span>
-                            <span class = "work__link">
-                                <i class="fas fa-rss"></i>
-                            </span>
-                        </span>
-                        <div class="work__text">
-                            xyz
-                        </div>
-                        <div class="work__tech">
-                            zz
-                        </div>
-                    </div>
+<!--                    <div class="work__item">-->
+<!--                        <span class="work__title">-->
+<!--                            6-->
+<!--                        </span>-->
+<!--                        <span class="work__link__wrapper">-->
+<!--                            <span class="work__link">-->
+<!--                                <i class="fab fa-github"></i>-->
+<!--                            </span>-->
+<!--                            <span class = "work__link">-->
+<!--                                <i class="fas fa-rss"></i>-->
+<!--                            </span>-->
+<!--                        </span>-->
+<!--                        <div class="work__text">-->
+<!--                            xyz-->
+<!--                        </div>-->
+<!--                        <div class="work__tech">-->
+<!--                            zz-->
+<!--                        </div>-->
+<!--                    </div>-->
                 </div>
             </section>
+
             <!--===== TECHNICAL SKILLS =====-->
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
@@ -448,33 +465,46 @@
             </section>
 
             <!--===== KAGGLE COMPETITIONS =====-->
-            <section class="kaggle competitions" id="competitions">
-                <h2 class="section-title">Kaggle Competitions</h2>
+<!--            <section class="kaggle competitions" id="competitions">-->
+<!--                <h2 class="section-title">Kaggle Competitions</h2>-->
+<!--                <div class="skills__container bd-grid">-->
+<!--                    <div>-->
+<!--                        <p class="skills__data">-->
+<!--                            Optiver Realized Volatility Challenge-->
+<!--                        </p>-->
+<!--                        <p>-->
+<!--                            Google Brain Ventilator Challenge-->
+<!--                        </p>-->
+<!--                    </div>-->
 
-            </section>
+<!--                    <div>-->
+<!--                        <img src="assets/img/placeholder.jpg" alt="" class="kaggle__img" width="40%" height="40%">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
 
             <!--===== CONTACT FORMSPREE =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
-<!--                Update with integration formspree-->
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
+                    <form action="https://formspree.io/f/moqybbor" class="contact__form" method="post">
+                        <input type="text" placeholder="Name" name="name" id="full-name" class="contact__input">
+                        <input type="mail" placeholder="Email" name= "_replyto" id="email-address" class="contact__input">
+                        <textarea name="message" placeholder="Message" id="message" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Personal Website">
+                        <input type="Submit" value="Submit" class="contact__button button">
                     </form>
                 </div>
             </section>
+
         </main>
 
         <!--===== FOOTER =====-->
         <footer class="footer">
             <p class="footer__title">Anand Sunderrajan</p>
-            <p class ="footer__subtitle">Blog</p>
             <div class="footer__social">
                 <a href="https://linkedin.com/in/AnandSunderrajan" target="_blank" class="footer__icon"><i class='fab fa-linkedin'></i> </a>
-                <a href="https://instagram.com/anand.98" target="_blank" class="footer__icon"><i class='fab fa-instagram'></i> </a>
+                <a href="https://anandsunderrajan.github.io/Blog" target="_blank" class="footer__icon"><i class='fas fa-rss'></i> </a>
                 <a href="https://github.com/AnandSunderrajan" target="_blank" class="footer__icon"><i class="fab fa-github"></i> </a>
                 <a href="mailto:anand299sunder@gmail.com" target="_blank" class="footer__icon"><i class='fas fa-envelope'></i> </a>
             </div>
