@@ -132,6 +132,8 @@ sr.reveal('.experience__subtitle', {});
 sr.reveal('.experience__carousel', {});
 // sr.reveal('.timeline__component', {});
 
+/*==================SKILLS=========================*/
+sr.reveal('.skills__tab', {})
 /*================SCROLL REVEAL CONTACT FORM=========================*/
 sr.reveal('.contact__input',{interval: 200});
 
