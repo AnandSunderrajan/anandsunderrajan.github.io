@@ -1,3 +1,5 @@
+
+
 /*===== Function to show the menu on navigation bar for smaller screen =====*/
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
@@ -133,10 +135,10 @@ sr.reveal('.experience__carousel', {});
 // sr.reveal('.timeline__component', {});
 
 /*=============SR PROJECTS ===================*/
-sr.reveal('.work__item', {});
+// sr.reveal('.work__item', {});
 
 /*==================SKILLS=========================*/
-sr.reveal('.skills__tab', {})
+// sr.reveal('.skills__tab', {})
 
 /*================SCROLL REVEAL CONTACT FORM=========================*/
 sr.reveal('.contact__input',{interval: 200});
