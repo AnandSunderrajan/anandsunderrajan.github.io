@@ -127,6 +127,7 @@ em {
   right: 0;
   top: 0;
   transition: .4s;
+  justify-content: space-between;
 }
 
 .slider:before {
@@ -332,13 +333,9 @@ input:checked + .slider:before {
   margin-bottom: var(--mb-2);
 }
 .about__img{
-  margin-left: -40%;
   /* justify-self: center; */
 }
-.about__img img{
-  /* width: 200px; */
-  /* border-radius: .5rem; */
-}
+
 .changing {
   color: var(--timeline_color);
 }
@@ -760,6 +757,11 @@ skills__data{
     width: 60%;
     right: 0%;
     top: 25%;
+  }
+}
+@media screen and (max-width: 550px){
+  .Back, .forward {
+    display: none;
   }
 }
 
