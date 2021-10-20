@@ -10,6 +10,7 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/js/fontawesome.min.js" rel="stylesheet">
         <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 <!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.js"></script>-->
 <!--        <script src="three.min.js"></script>-->
 
@@ -60,10 +61,12 @@
                 <div class="home__data">
                     <h1 class="home__title">
                         Hi, I'm <br>
-                        <span class="home__title-color">Anand Sunderrajan</span><br>
+                        <span class="home__title-color">Anand Sunderrajan</span>
+                
+                        <br>
                         <span class="changing"></span></h1>
 
-                    <a href="#" class="button">Check out my resume!</a>
+                    <a href="assets/img/AnandSunderrajan_Resume.pdf" target="_blank"class="button">Check out my resume!</a>
                 </div>
 
                 <div class="home__social">
@@ -280,45 +283,54 @@
 
                 <div class="work__container bd-grid">
                     <div class="work__item">
-                        <span class="work__title">
+                        <div class="work__title">
                             Personal Website V2
-                        </span>
-                        <span class="work__link__wrapper">
-                            <span class="work__link">
-                                <i class="fab fa-github"></i>
-                            </span>
-                            <span class = "work__link">
-                                <i class="fas fa-rss"></i>
-                            </span>
-                        </span>
+                        </div>
+                        <div class="work__info">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>                        
                         <div class="work__text">
-                            A fully responsive personal website that showcases current projects and achievements. It's built using HTML, CSS, and Javascript and is deployed on github pages.
-                            Contains fluid scroll animations, custom graphics, a fully functional dark mode with saved preferences, and a functioning contact form using Formspree.
+                            A fully responsive personal website that showcases current projects and achievements. It's built using HTML, CSS, and Javascript and is deployed on github pages and vercel.
+                            Contains fluid scroll animations, custom graphics, 3D voxels, a fully functional dark mode with saved preferences, and a functioning contact form using Formspree.
                         </div>
                         <div class="work__tech">
                             <span>Javascript</span>
                             <span>HTML</span>
                             <span>CSS</span>
+                            <span>Three.js</span>
                             <span>Git</span>
+                            <span>MagicaVoxel</span>
+                            <span>Blender</span>
                             <span>Formspree</span>
                         </div>
-                    </div>
-                    <div class="work__item">
-                        <span class="work__title">
-                            Trading Bot
-                        </span>
-                        <span class="work__link__wrapper">
+                        <div class="work__link__wrapper">
                             <span class="work__link">
                                 <i class="fab fa-github"></i>
                             </span>
                             <span class = "work__link">
                                 <i class="fas fa-rss"></i>
                             </span>
-                        </span>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="work__title">
+                            Trading Bot
+                        </div>
+                        <div class="work__info">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>
                         <div class="work__text">
                             Algorithmic trading bot in Python that conducts financial and sentiment analysis for tickers on high traffic subreddits and stock tweets
                             using APIs (Polygon, PRAW, Stocktwits). The multi-model pipeline achieved an alpha of 1.31 (compared to the SP500) with a beta of
                             0.48, providing an average annual return of approximately 13.78% through back testing with data since 2003.
+                        </div>
+                        <div class="work__link__wrapper">
+                            <span class="work__link">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span class = "work__link">
+                                <i class="fas fa-rss"></i>
+                            </span>
                         </div>
                         <div class="work__tech">
                             <span>Python</span>
@@ -332,17 +344,12 @@
                         </div>
                     </div>
                     <div class="work__item">
-                        <span class="work__title">
+                        <div class="work__title">
                             Event Attendance Tracker
-                        </span>
-                        <span class="work__link__wrapper">
-                            <span class="work__link">
-                                <i class="fab fa-github"></i>
-                            </span>
-                            <span class = "work__link">
-                                <i class="fas fa-rss"></i>
-                            </span>
-                        </span>
+                        </div>
+                        <div class="work__info">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>
                         <div class="work__text">
                             Created a custom-designed PCB containing an ESP-32 micro-controller, programmed in C, and created an android application in Java
                             to develop a comprehensive system that tracks event attendees at a booth. Developed a custom distance determining algorithm that
@@ -356,19 +363,22 @@
                             <span class="work__tech__spaced">PCB Design</span>
                             <span>Soldering</span>
                         </div>
-                    </div>
-                    <div class="work__item">
-                        <span class="work__title">
-                            Pipelined LC3-b Microprocessor
-                        </span>
-                        <span class="work__link__wrapper">
+                        <div class="work__link__wrapper">
                             <span class="work__link">
                                 <i class="fab fa-github"></i>
                             </span>
                             <span class = "work__link">
                                 <i class="fas fa-rss"></i>
                             </span>
-                        </span>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="work__title">
+                            Pipelined LC3-b Microprocessor
+                        </div>
+                        <div class="work__info">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>
                         <div class="work__text">
                             A pipelined version of the LC3-B Microprocessor with features such as cache, branch prediction etc. Pipelined version built as a final
                             project for ECE385 (Digital Systems Laboratory) with additional features added subsequently.
@@ -379,22 +389,33 @@
                             <span class="work__tech__spaced">Quartus Prime</span>
                             <span>LaTeX</span>
                         </div>
+                        <div class="work__link__wrapper">
+                            <span class="work__link">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span class = "work__link">
+                                <i class="fas fa-rss"></i>
+                            </span>
+                        </div>
                     </div>
                     <div class="work__item">
-                           <span class="work__title">
-                               Personal Website V1
-                           </span>
-                        <span class="work__link__wrapper">
-                               <span class="work__link">
-                                   <i class="fab fa-github"></i>
-                               </span>
-                               <span class = "work__link">
-                                   <i class="fas fa-rss"></i>
-                               </span>
-                           </span>
+                        <div class="work__title">
+                            Personal Website V1
+                        </div>
+                        <div class="work__info">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="work__link__wrapper">
+                            <span class="work__link">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span class = "work__link">
+                                <i class="fas fa-rss"></i>
+                            </span>
+                        </div>
                         <div class="work__text">
-                            An object detection and classification pipeline built in Python using TensorFlow. The model is trained using the Fashion-MNIST dataset,
-                            built using two separate methods - Keras and Low-Level APIs, achieving an accuracy of 92% and 89.7% respectively.
+                            A fully responsive website built using React, Javascript, Material UI, Node.js, HTML and CSS. It showcases skills and projects, 
+                            and presents it on a clean, minimalistic website.
                         </div>
                         <div class="work__tech">
                             <span>React</span>
@@ -404,17 +425,12 @@
                         </div>
                     </div>
                     <div class="work__item">
-                           <span class="work__title">
-                               Object Detection System
-                           </span>
-                        <span class="work__link__wrapper">
-                               <span class="work__link">
-                                   <i class="fab fa-github"></i>
-                               </span>
-                               <span class = "work__link">
-                                   <i class="fas fa-rss"></i>
-                               </span>
-                           </span>
+                        <div class="work__title">
+                            Object Detection System
+                        </div>
+                        <div class="work__info">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>                        
                         <div class="work__text">
                             An object detection and classification pipeline built in Python using TensorFlow. The model is trained using the Fashion-MNIST dataset,
                             built using two separate methods - Keras and Low-Level APIs, achieving an accuracy of 92% and 89.7% respectively.
@@ -425,19 +441,22 @@
                             <span>Python</span>
                             <span>TensorFlow</span>
                         </div>
+                        <div class="work__link__wrapper">
+                            <span class="work__link">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span class = "work__link">
+                                <i class="fas fa-rss"></i>
+                            </span>
+                        </div>
                     </div>
                     <div class="work__item">
-                           <span class="work__title">
-                               PotatOS
-                           </span>
-                        <span class="work__link__wrapper">
-                               <span class="work__link">
-                                   <i class="fab fa-github"></i>
-                               </span>
-                               <span class = "work__link">
-                                   <i class="fas fa-rss"></i>
-                               </span>
-                            </span>
+                        <div class="work__title">
+                            PotatOS
+                        </div>
+                        <div class="work__info">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>                        
                         <div class="work__text">
                             A linux OS built from ground up including both Assembly and C code. Fully supports keyboard and mice input, has a blinking cursor,
                             multiple terminals through the use of paging and saved memory.
@@ -448,6 +467,14 @@
                             <span>Linux</span>
                             <span>UNIX</span>
                             <span>x86</span>
+                        </div>
+                        <div class="work__link__wrapper">
+                            <span class="work__link">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span class = "work__link">
+                                <i class="fas fa-rss"></i>
+                            </span>
                         </div>
                     </div>
 <!--                    <div class="work__item">-->
@@ -593,6 +620,25 @@
                 backSpeed: 90,
                 loop: true
             });
+        </script>
+        <script type="text/javascript" src="/assets/js/vanilla-tilt.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".work__item"), {
+                max: 20,
+                speed: 500,
+                glare:true
+            });
+        </script>
+        <script>
+            anime({
+                targets: '#name path',
+                strokeDashoffset: [anime.setDashoffset, 0],
+                easing: 'easeInOutSine',
+                duration: 1500,
+                delay: function(el, i) { return i * 250 },
+                direction: 'forward',
+                loop: false
+                });
         </script>
     </body>
 </html>

@@ -284,6 +284,17 @@ input:checked + .slider:before {
 }
 .home__title-color{
   color: var(--first-color);
+  /* width: 60%; */
+  /* animation: fill 0.5s ease forwards 3s; */
+  /* font-size: var(--big-font-size); */
+}
+.name{
+  width: 60%;
+}
+@keyframes fill {
+  to{
+    fill:white;
+  }
 }
 .home__social{
   display: flex;
@@ -657,42 +668,20 @@ skills__data{
 .work__container{
   row-gap: 2rem;
 }
+
 .work__link__wrapper {
+  text-align: center;
   margin-left: 0.4rem;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 .work__link{
   word-spacing: 0.1rem;
   position: relative;
+  display: none;
 }
 .work__link:hover {
   color: salmon;
 }
-.work__title{
-  text-align: left;
-  font-family: 'Poppins' ;
-  font-size: 1.25rem;
-  font-weight: bold;
-  font-style: normal;
-}
-.work__text{
-  text-align: left;
-  padding-bottom: 1.8rem;
-}
-.work__tech{
-  /*position: absolute;*/
-  font-weight: lighter;
-  bottom: -5rem;
-  font-size: 0.8rem;
-  word-spacing: 1rem;
-}
-.work__tech__spaced{
-  font-weight: lighter;
-  bottom: -5rem;
-  font-size: 0.8rem;
-  word-spacing: 0.2rem;
-}
-
 .work__item{
   box-shadow: 0 4px 25px var(--box);
   border-radius: 0.5rem;
@@ -700,9 +689,68 @@ skills__data{
   overflow: hidden;
   transition: 1s;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
 .work__item:hover{
   transform: scale(1.1);
+}
+.work__title{
+  text-align: center;
+  /* transform: translateY(rem); */
+  font-family: 'Poppins' ;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-style: normal;
+}
+.work__info{
+  font-size: 2rem;
+  text-align: center;
+}
+.work__text{
+  text-align: left;
+  /* padding-bottom: 1.8rem; */
+  transform: translateY(10rem);
+  overflow: hidden;
+  display: none;
+}
+.work__tech {
+  text-align: center;
+  position: relative;
+  font-weight: lighter;
+  /* bottom: 4rem; */
+  word-spacing: 1rem;
+}
+
+.work__item:hover .work__text {
+  display: unset;
+  transform: translateY(0px);
+}
+.work__item:hover .work__title {
+  transform: initial;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.work__item:hover .work__info{
+  display: none;
+}
+.work__item:hover .work__link {
+  display: unset;
+}
+
+.work__item:hover .work__tech{
+  /* position: absolute; */
+  display: none;
+  font-weight: lighter;
+  bottom: -5rem;
+  font-size: 0.8rem;
+}
+.work__item:hover .work__tech__spaced{
+  display: none;
+  font-weight: lighter;
+  bottom: -5rem;
+  font-size: 0.8rem;
+  word-spacing: 0.2rem;
 }
 
 
@@ -767,6 +815,9 @@ skills__data{
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){
+  .bd-grid {
+    width: 85%;
+  }
   body{
     margin: 0;
   }
