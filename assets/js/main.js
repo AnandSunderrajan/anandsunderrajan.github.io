@@ -32,7 +32,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 /*==== DARK MODE ====*/
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-const currentTheme = localStorage.getItem('theme') || 'light';
+const currentTheme = localStorage.getItem('data-theme') || 'dark';
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
     if (currentTheme === 'dark') {
