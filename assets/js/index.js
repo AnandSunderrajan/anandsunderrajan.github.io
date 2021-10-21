@@ -19,7 +19,7 @@ loader.load('assets/img/final.glb', function(glb){
 )
 const sizes = {
     width: innerWidth/2,
-    height: innerHeight/1.25
+    height: innerHeight/2
 }
 
 const camera = new THREE.PerspectiveCamera(100, sizes.width/sizes.height, 0.1, 100)
