@@ -33,6 +33,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('data-theme') || 'dark';
+const logo = document.getElementById('themeLogo')
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
     if (currentTheme === 'dark') {
@@ -43,10 +44,13 @@ function switchTheme(e) {
     if (e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
+        logo.setAttribute('src', 'assets/img/masked_as_logo.png')
     }
     else {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
+        logo.setAttribute('src', 'assets/img/masked_as_logo_light.png')
+
     }
 }
 toggleSwitch.addEventListener('change', switchTheme, false);
@@ -108,7 +112,7 @@ function skills_SlideShow(n) {
     skills_circles[skills_slidePosition-1].className += " enable";
 }
 
-document.getElementsByTagName("video")[0].playbackRate = 0.8
+document.getElementsByTagName("video")[0].playbackRate = 0.6
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
