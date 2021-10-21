@@ -19,7 +19,7 @@ loader.load('assets/img/final.glb', function(glb){
 )
 const sizes = {
     width: innerWidth/2,
-    height: innerHeight/1.5
+    height: innerHeight/1.25
 }
 
 const camera = new THREE.PerspectiveCamera(100, sizes.width/sizes.height, 0.1, 100)
@@ -33,7 +33,7 @@ const renderer = new THREE.WebGL1Renderer({
 })
 
 const controls = new OrbitControls( camera, renderer.domElement );
-camera.position.set(1,1,4);
+camera.position.set(1,1,5);
 // camera.translateY(10)
 controls.update();
 controls.autoRotate = true
