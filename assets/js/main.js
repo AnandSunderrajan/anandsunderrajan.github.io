@@ -32,7 +32,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 /*==== DARK MODE ====*/
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-const currentTheme = localStorage.getItem('theme');
+const currentTheme = localStorage.getItem('theme') || 'light';
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
     if (currentTheme === 'dark') {
@@ -108,6 +108,7 @@ function skills_SlideShow(n) {
     skills_circles[skills_slidePosition-1].className += " enable";
 }
 
+document.getElementsByTagName("video")[0].playbackRate = 0.8
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
