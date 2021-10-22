@@ -75,7 +75,7 @@ body{
   color: var(--second-color);
   background: var(--bg-color);
 }
-header
+.header404
 {
   position: absolute;
   top: 0;
