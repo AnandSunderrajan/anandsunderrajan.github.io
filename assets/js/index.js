@@ -17,8 +17,9 @@ loader.load('assets/img/final.glb', function(glb){
     console.log('error happen :(')
 }
 )
+
 const sizes = {
-    width: innerWidth/2,
+    width: innerWidth-50,
     height: innerHeight/2
 }
 
