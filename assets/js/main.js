@@ -33,14 +33,8 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 // const switcher = document.querySelector("#switcher");
 // switcher.setAttribute('src', 'https://vectorified.com/images/switch-button-icon-19.png');
 // const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-const currentTheme = localStorage.getItem('theme') || 'dark';
 const logo = document.getElementById('themeLogo')
-// if (currentTheme) {
-//     document.documentElement.setAttribute('data-theme', currentTheme);
-//     if (currentTheme === 'dark') {
-//         toggleSwitch.checked = true;
-//     }
-// }
+const favi = document.getElementById('favi')
 // function switchTheme(e) {
 //     if (e.target.checked) {
 //         document.documentElement.setAttribute('data-theme', 'dark');
@@ -65,21 +59,25 @@ button.addEventListener('click', () => {
   moon.classList.toggle('visible')
   sun.classList.toggle('visible')
 })
+
 function handleDarkModeToggle() {
-    if (moon.classList.length == 2){
+    if (sun.classList.length == 2){
         console.log("Toggled to Light Mode")
-        document.getElementById('thebox').style = "filter: invert(0)";
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-        logo.setAttribute('src', 'assets/img/masked_as_logo.png')
+        document.getElementById('thebox').style = "filter: invert(100)";
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        logo.setAttribute('src', 'assets/img/masked_as_logo_light.png');
+        favi.setAttribute('src', 'assets/img/light_favicon.ico');
     } else {
         console.log("Toggled to Dark Mode")
-        document.documentElement.setAttribute('data-theme', 'light');
-        document.getElementById('thebox').style = "filter: invert(100)";
-        localStorage.setItem('theme', 'light');
-        logo.setAttribute('src', 'assets/img/masked_as_logo_light.png')
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.getElementById('thebox').style = "filter: invert(0)";
+        localStorage.setItem('theme', 'dark');
+        logo.setAttribute('src', 'assets/img/masked_as_logo.png');
+        favi.setAttribute('src', 'assets/img/dark_favicon.ico');
     }
 }
+
 
 /*===== EXPERIENCE TIMELINE CAROUSEL ===== */
 var slidePosition = 1;
