@@ -19,7 +19,7 @@ loader.load('assets/img/final.glb', function(glb){
 )
 
 const sizes = {
-    width: innerWidth-50,
+    width: innerWidth/2 + 50,
     height: innerHeight/2
 }
 
