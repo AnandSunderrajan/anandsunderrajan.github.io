@@ -147,27 +147,30 @@ const sr = ScrollReveal({
 
 /*========= SCROLL REVEAL HOME ===========*/
 sr.reveal('.home__title',{});
-sr.reveal('.button',{delay: 200});
+sr.reveal('#resbutton',{delay: 200});
 sr.reveal('.home__img',{delay: 400});
 sr.reveal('.home__social-icon',{ interval: 200});
 
-/*========== SCROLL REVEAL ABOUT ME ===============*/
-sr.reveal('.about__img',{});
+// /*========== SCROLL REVEAL ABOUT ME ===============*/
+
 sr.reveal('.about__subtitle',{delay: 400});
+sr.reveal('.webgl',{});
 sr.reveal('.about__text',{delay: 400});
 
 
 /*=============SCROLL REVEAL EXPERIENCE ===================*/
 sr.reveal('.experience__subtitle', {});
-sr.reveal('.experience__carousel', {});
+// sr.reveal('.experience__carousel', {});
 // sr.reveal('.timeline__component', {});
 
 /*=============SR PROJECTS ===================*/
-// sr.reveal('.work__item', {});
+// sr.reveal('.work__item', {duration:1000});
 
 /*==================SKILLS=========================*/
 // sr.reveal('.skills__tab', {})
 
 /*================SCROLL REVEAL CONTACT FORM=========================*/
-sr.reveal('.contact__input',{interval: 200});
+// sr.reveal('.contact__input',{interval: 100, duration:1000});
+
+// sr.reveal('.footer', {});
 
