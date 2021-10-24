@@ -9,7 +9,7 @@ const loader = new GLTFLoader()
 loader.load('assets/img/final.glb', function(glb){
     console.log(glb)
     const root = glb.scene;
-    // root.scale.set(1.2,1,1)
+    // root.scale.set(1,1.2,1)
     scene.add(root);
 }, function(xhr){
     console.log((xhr.loaded/xhr.total * 100) + "% loaded")
@@ -39,6 +39,7 @@ camera.position.set(1,1,5);
 controls.update();
 controls.autoRotate = true
 controls.autoRotateSpeed = 3.0
+controls.enableZoom = false;
 scene.add(camera)
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(canvas.devicePixelRatio)
