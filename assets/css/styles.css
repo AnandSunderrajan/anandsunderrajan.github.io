@@ -20,7 +20,7 @@
   --animated-color:  rgba(64,112,244, 0.2);
   --in-val: 100%;
   --selected: rgba(98.04%, 50.2%, 44.71%, 70%);
-
+  --hover-swap: #0693e3;
 }
 
 /* --font-color: white;
@@ -175,6 +175,7 @@ img{
   --in-val: 0;
   --selected: rgba(6,147,227, 0.8);
   --font-color: black;
+  --hover-swap: salmon;
 }
 
 /* === dark mode ==== */
@@ -525,8 +526,11 @@ video {
 .changing {
   color: var(--timeline_color);
 }
+.blog__link{
+  color: var(--first-color);
+}
 .blog__link:hover {
-  color: salmon;
+  color: var(--hover-swap);
   transform: scale(1.1);
 }
 
@@ -779,15 +783,13 @@ video {
 }
 
 .skills__data{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: left;
   position: relative;
   font-weight: var(--font-semi);
   padding: .5rem 1rem;
   margin-bottom: var(--mb-4);
   border-radius: .5rem;
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  box-shadow: 0 4px 25px var(--box);
 }
 
 /* The circles or bullets and indicators */
@@ -1008,6 +1010,13 @@ video {
   .Back, .forward {
     display: none;
   }
+  .home__img {
+    padding-bottom: 40%;
+    width: 90%;
+  }
+  /* .home__social {
+    padding-bottom: 30%;
+  } */
 }
 
 @media screen and (min-width: 720px){
@@ -1152,6 +1161,15 @@ video {
 
 }
 
+@media screen and (max-width: 550px) {
+  .timeline {
+    margin-left: -2em;
+  }
+  .work__item{
+    margin-left: 10%;
+  }
+}
+
 @media screen and (min-width: 1354px) and (max-width: 1364px) {
   .work__item{
     height: 22em;
@@ -1232,44 +1250,44 @@ video {
 
 @media screen and (min-width: 435px) and (max-width: 567px) {
   .work__item{
-    height: 19em;
+    height: 21em;
   }
 }
 
 @media screen and (min-width: 416px) and (max-width: 434px) {
   .work__item{
-    height: 21em;
+    height: 23em;
   }
 }
 
 @media screen and (min-width: 390px) and (max-width: 415px) {
   .work__item{
-    height: 23em;
+    height: 25em;
   }
 }
 
 
 @media screen and (min-width: 373px) and (max-width: 389px) {
   .work__item{
-    height: 25em;
+    height: 28em;
   }
 }
 
 @media screen and (min-width: 322px) and (max-width: 372px) {
   .work__item{
-    height: 28em;
+    height: 32em;
   }
 }
 
 @media screen and (min-width: 294px) and (max-width: 322px) {
   .work__item{
-    height: 32em;
+    height: 38em;
   }
 }
 
 @media screen and (min-width: 50px) and (max-width: 294px) {
   .work__item{
-    height: 38em;
+    height: 42em;
   }
 }
 

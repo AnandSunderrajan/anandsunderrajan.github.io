@@ -102,7 +102,6 @@
                         <!--            testing-->
                         <canvas class="webgl"></canvas>
                         <script type="module" src = "assets/js/index.js"></script>
-
                     <div class="about__text">
                         <h2 class="about__subtitle">I'm Anand</h2>
                         <p class="about__text">
@@ -111,7 +110,7 @@
                             from the University of Illinois at Urbana-Champaign. I'm currently looking for full-time Machine Learning,
                             Software Development or FPGA Design opportunities. Feel free to contact me regarding any positions you might have!
                             <br>
-                            Check out my blog <span href="https://anandsunderrajan.github.io/blog" class="blog__link"><u>here.</u></span> 
+                            Check out my blog <a href="https://anandsunderrajan.github.io/blog" target="_blank" class="blog__link"><u>here.</u></a> 
                             <br>
                             TL;DR - I make some pretty cool stuff :)
                         </p>
@@ -316,8 +315,9 @@
                             <i class="fa fa-plus-circle" aria-hidden="true"></i>
                         </div>                        
                         <div class="work__text">
-                            A fully responsive personal website that showcases current projects and achievements. It's built using HTML, CSS, and Javascript and is deployed on github pages and vercel.
-                            Contains fluid scroll animations, custom graphics, 3D voxels, a fully functional dark mode with saved preferences, and a functioning contact form using Formspree.
+                            A fully responsive personal website that showcases current projects and achievements. It's built using HTML, CSS, and Javascript.
+                            The website is deployed via github pages. It contains fluid scroll animations, custom graphics, 3D voxels, a dark mode with saved preferences, 
+                            and a contact form using Formspree.
                         </div>
                         <div class="work__tech">
                             <span>Javascript</span>
@@ -359,6 +359,7 @@
                             </span>
                         </div>
                         <div class="work__tech">
+                            <span class="work__tech__spaced">Google Cloud Platform (GCP)</span>
                             <span>Python</span>
                             <span>Pandas</span>
                             <span>PyTorch</span>
@@ -380,6 +381,7 @@
                             A custom-designed PCB with an ESP-32 micro-controller, and a companion android application
                             that provides a comprehensive system to tracks event attendees at a booth. Developed a custom distance determining algorithm that
                             achieves an accuracy of 98.04% in determining the booths attended, a >35% increase over tested alternatives.
+                            Fall 2020 - Team 13, winner of 'Best Engineered Project' award (ECE445).
                         </div>
                         <div class="work__tech">
                             <span>C</span>
@@ -391,7 +393,7 @@
                         </div>
                         <div class="work__link__wrapper">
                             <span class="work__link">
-                                <a href="https://github.com/AnandSunderrajan" target="_blank" class="work__link"> <i class="fab fa-github"></i></a>
+                                <a href="https://courses.engr.illinois.edu/ece445/getfile.asp?id=18600" target="_blank" class="work__link"> <i class="fab fa-globe"></i></a>
                             </span>
                             <span class = "work__link">
                                 <a href="https://anandsunderrajan.github.io/blog" target="_blank" class="work__link "><i class="fas fa-rss"></i></a>
@@ -433,7 +435,7 @@
                         </div>                        
                         <div class="work__text">
                             A fully responsive website built using React, Javascript, Material UI, Node.js, HTML and CSS. It showcases skills and projects, 
-                            and presents it on a clean, minimalistic website.
+                            and presents it on a clean, minimalistic website that is deployed on github pages.
                         </div>
                         <div class="work__tech">
                             <span>React</span>
@@ -590,24 +592,34 @@
                 </div>
             </section>
 
-            <!--===== KAGGLE COMPETITIONS =====-->
-<!--            <section class="kaggle competitions" id="competitions">-->
-<!--                <h2 class="section-title">Kaggle Competitions</h2>-->
-<!--                <div class="skills__container bd-grid">-->
-<!--                    <div>-->
-<!--                        <p class="skills__data">-->
-<!--                            Optiver Realized Volatility Challenge-->
-<!--                        </p>-->
-<!--                        <p>-->
-<!--                            Google Brain Ventilator Challenge-->
-<!--                        </p>-->
-<!--                    </div>-->
+            <!-- ===== KAGGLE COMPETITIONS =====-->
+           <section class="kaggle competitions" id="competitions">
+               <h2 class="section-title">Kaggle Competitions</h2>
+               <div class="skills__container bd-grid">
+                   <div>
+                       <p class="skills__data">
+                           Google Brain Ventilator Challenge
+                           <br>
+                           Bronze medal, ranked 221/2605.
+                       </p>
+                       <p class="skills__data">
+                           PetFinder.my - Pawpularity Contest
+                           <br>
+                           Ongoing competition, currently ranked 68/1975.
+                       </p>
+                       <p class="skills__data">
+                           Optiver Realized Volatility Challenge
+                           <span class="comp__links"></span>
+                           <br>
+                           Ongoing competition, testing phase leaderboard updated biweekly. Currently 210/3852.
+                       </p>
+                   </div>
 
-<!--                    <div>-->
-<!--                        <img src="assets/img/placeholder.jpg" alt="" class="kaggle__img" width="40%" height="40%">-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </section>-->
+                   <div>
+                       <img src="assets/img/placeholder.jpg" alt="" class="kaggle__img" width="40%" height="40%">
+                   </div>
+               </div>
+            </section>
 
             <!--===== CONTACT FORMSPREE =====-->
             <section class="contact section" id="contact">
@@ -639,10 +651,10 @@
         <footer class="footer">
             <p class="footer__title">Anand Sunderrajan</p>
             <div class="footer__social">
-                <a href="https://linkedin.com/in/AnandSunderrajan" target="_blank" class="footer__icon"><i class='fab fa-linkedin'></i> </a>
-                <a href="https://anandsunderrajan.github.io/blog" target="_blank" class="footer__icon"><i class='fas fa-rss'></i> </a>
                 <a href="https://github.com/AnandSunderrajan" target="_blank" class="footer__icon"><i class="fab fa-github"></i> </a>
                 <a href="mailto:anand299sunder@gmail.com" target="_blank" class="footer__icon"><i class='fas fa-envelope'></i> </a>
+                <a href="https://linkedin.com/in/AnandSunderrajan" target="_blank" class="footer__icon"><i class='fab fa-linkedin'></i> </a>
+                <a href="https://anandsunderrajan.github.io/blog" target="_blank" class="footer__icon"><i class='fas fa-rss'></i> </a>
             </div>
             <p>Currently v2.0</p>
             <p>&#169; 2021. All Rights Reserved.</p>
