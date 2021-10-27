@@ -781,6 +781,9 @@ video {
   border-radius: 10px;
   transition: background-color 0.5s ease;
 }
+.heavy {
+  font-weight: bold;
+}
 
 .skills__data{
   text-align: left;
@@ -873,7 +876,7 @@ video {
   overflow: hidden;
   transition: 1s;
   cursor: pointer;
-  height:20em;
+  height:25em;
   justify-content: center;
   align-items: center;
 }
@@ -1172,122 +1175,122 @@ video {
 
 @media screen and (min-width: 1354px) and (max-width: 1364px) {
   .work__item{
-    height: 22em;
+    height: 27em;
   }
 }
 
 @media screen and (min-width: 1292px) and (max-width: 1353px) {
   .work__item{
-    height: 24em;
+    height: 29em;
   }
 }
 
 @media screen and (min-width: 1168px) and (max-width: 1291px) {
   .work__item{
-    height: 26em;
+    height: 31em;
   }
 }
 
 @media screen and (min-width: 1056px) and (max-width: 1167px) {
   .work__item{
-    height: 28em;
+    height: 33em;
   }
 }
 
 @media screen and (min-width: 1006px) and (max-width: 1055px) {
   .work__item{
-    height: 30em;
+    height: 35em;
   }
 }
 
 @media screen and (min-width: 1002px) and (max-width: 1005px) {
   .work__item{
-    height: 32em;
+    height: 37em;
   }
 }
 
 @media screen and (min-width: 948px) and (max-width: 1001px) {
   .work__item{
-    height: 35em;
+    height: 40em;
   }
 }
 
 @media screen and (min-width: 872px) and (max-width: 947px) {
   .work__item{
-    height: 38em;
+    height: 43em;
   }
 }
 
 @media screen and (min-width: 850px) and (max-width: 871px) {
   .work__item{
-    height: 43em;
+    height: 48em;
   }
 }
 
 @media screen and (min-width: 746px) and (max-width: 849px) {
   .work__item{
-    height: 26em;
+    height: 31em;
   }
 }
 
 @media screen and (min-width: 720px) and (max-width: 745px) {
   .work__item{
-    height: 28em;
+    height: 33em;
   }
 }
 
 @media screen and (min-width: 700px) and (max-width: 719px) {
   .work__item{
-    height: 15em;
+    height: 20em;
   }
 }
 
 @media screen and (min-width: 568px) and (max-width: 699px) {
   .work__item{
-    height: 17em;
+    height: 22em;
   }
 }
 
 @media screen and (min-width: 435px) and (max-width: 567px) {
   .work__item{
-    height: 21em;
+    height: 26em;
   }
 }
 
 @media screen and (min-width: 416px) and (max-width: 434px) {
   .work__item{
-    height: 23em;
+    height: 28em;
   }
 }
 
 @media screen and (min-width: 390px) and (max-width: 415px) {
   .work__item{
-    height: 25em;
+    height: 30em;
   }
 }
 
 
 @media screen and (min-width: 373px) and (max-width: 389px) {
   .work__item{
-    height: 28em;
+    height: 33em;
   }
 }
 
 @media screen and (min-width: 322px) and (max-width: 372px) {
   .work__item{
-    height: 32em;
+    height: 37em;
   }
 }
 
 @media screen and (min-width: 294px) and (max-width: 322px) {
   .work__item{
-    height: 38em;
+    height: 43em;
   }
 }
 
 @media screen and (min-width: 50px) and (max-width: 294px) {
   .work__item{
-    height: 42em;
+    height: 47em;
   }
 }
 
