@@ -446,7 +446,7 @@
                         </div>
                         <div class="work__link__wrapper">
                             <span class="work__link">
-                                <a href="https://github.com/AnandSunderrajan/v1" target="_blank" class="work__link"> <i class="fab fa-github"></i></a>
+                                <a href="https://github.com/AnandSunderrajan/v1" target="_blank" class="work__link"> <i class="fas fa-github"></i></a>
                             </span>
                             <span class = "work__link">
                                 <a href="https://anandsunderrajan.github.io/blog" target="_blank" class="work__link "><i class="fas fa-rss"></i></a>
@@ -541,12 +541,25 @@
                 <h2 class="section-title">Skills</h2>
                 <!--                Change this to be a carousel as well-->
                 <div style="text-align:center">
-                    <span class="skills__tab" onclick="skills_currentSlide(1)"> <h3 class="experience__subtitle"> Technical Skills / Frameworks </h3></span>
-                    <span class="skills__tab" onclick="skills_currentSlide(2)"> <h3 class="experience__subtitle"> Programming Languages </h3> </span>
+                    <span class="skills__tab" onclick="skills_currentSlide(1)"> <h3 class="experience__subtitle"> Programming Languages </h3></span>
+                    <span class="skills__tab" onclick="skills_currentSlide(2)"> <h3 class="experience__subtitle"> Technical Skills / Frameworks </h3> </span>
                     <span class="skills__tab" onclick="skills_currentSlide(3)"> <h3 class="experience__subtitle"> Spoken Languages </h3> </span>
                 </div>
                 <br>
                 <div class="skills__carousel">
+                    <div class="skill_base_container">
+                        <div class="skills__timeline">
+                            <span class="skills__name">Assembly (LC3 / x86)</span>
+                            <span class="skills__name">C</span>
+                            <span class="skills__name">C++</span>
+                            <span class="skills__name">CUDA</span>
+                            <span class="skills__name">HTML</span>
+                            <span class="skills__name">CSS</span>
+                            <span class="skills__name">Node-Red</span>
+                            <span class="skills__name">Python</span>
+                            <span class="skills__name">SystemVerilog</span>
+                        </div>
+                    </div>
                     <div class="skill_base_container">
                         <div class="skills__timeline">
                             <span class="skills__name">Adobe Suite</span>
@@ -566,19 +579,6 @@
                             <span class="skills__name">Quartus</span>
                             <span class="skills__name">sklearn</span>
                             <span class="skills__name">TensorFlow</span>
-                        </div>
-                    </div>
-                    <div class="skill_base_container">
-                        <div class="skills__timeline">
-                            <span class="skills__name">Assembly (LC3 / x86)</span>
-                            <span class="skills__name">C</span>
-                            <span class="skills__name">C++</span>
-                            <span class="skills__name">CUDA</span>
-                            <span class="skills__name">HTML</span>
-                            <span class="skills__name">CSS</span>
-                            <span class="skills__name">Node-Red</span>
-                            <span class="skills__name">Python</span>
-                            <span class="skills__name">SystemVerilog</span>
                         </div>
                     </div>
                     <div class="skill_base_container">
@@ -681,7 +681,7 @@
         <script type="text/javascript" src="/assets/js/vanilla-tilt.js"></script>
         <script type="text/javascript">
             VanillaTilt.init(document.querySelectorAll(".work__item"), {
-                max: 20,
+                max: 15,
                 speed: 500,
                 scale:1.05,
                 glare:true,
