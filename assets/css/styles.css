@@ -845,6 +845,15 @@ video {
   /* color: white; */
   transform: scale(1.1);
 }
+.kaggle__container{
+  grid-template-columns: 1fr 0.5fr;
+  column-gap: 5em;
+  align-items: center;
+  text-align: center;
+}
+.kaggle__img{
+  align-content: center;
+}
 .kaggle__img img{
   border-radius: .5rem;
 }
