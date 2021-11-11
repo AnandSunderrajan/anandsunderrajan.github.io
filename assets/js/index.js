@@ -30,7 +30,7 @@ const camera = new THREE.PerspectiveCamera(80, sizes.width/sizes.height, 0.1, 50
 const color = 0xFFFFFF;
 const intensity = 1;
 const light = new THREE.DirectionalLight(color, intensity);
-light.position.set(0,0,0)
+light.position.set(1,2,3)
 camera.add(light)
 
 const renderer = new THREE.WebGL1Renderer({
